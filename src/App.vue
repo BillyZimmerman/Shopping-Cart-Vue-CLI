@@ -8,22 +8,22 @@
       <router-link to="/products" class="top-bar-link">
         <span>Products</span>
       </router-link>
-          <router-link to="/past-orders" class="top-bar-link">
+      <router-link to="/past-orders" class="top-bar-link">
         <span>Past Orders</span>
       </router-link>
     </nav>
     <div @click="toggleSidebar" class="top-bar-cart-link">
-          <i class="icofont-cart-alt icofont-1x"></i>
-          <span>Cart ({{ totalQuantity }}) </span>
+      <i class="icofont-cart-alt icofont-1x"></i>
+      <span>Cart ({{ totalQuantity }})</span>
     </div>
   </header>
-  <router-view :inventory="inventory"/>
+  <router-view :inventory="inventory" :addToCart="addToCart" />
 
   <Sidebar
-    v-if="ShowSidebar"
+    v-if="showSidebar"
     :toggle="toggleSidebar"
     :cart="cart"
-    inventory="inventory"
+    :inventory="inventory"
     :remove="removeItem"
   />
 </template>
@@ -31,14 +31,13 @@
 <script>
 import Sidebar from '@/components/Sidebar.vue'
 import food from './food.json'
-
 export default {
   components: {
     Sidebar
   },
   data () {
     return {
-      showSidebar: true,
+      showSidebar: false,
       inventory: food,
       cart: {}
     }
@@ -51,12 +50,9 @@ export default {
     }
   },
   methods: {
-    addToCart (name, index) {
+    addToCart (name, quantity) {
       if (!this.cart[name]) this.cart[name] = 0
-      console.log(name, index)
-      this.cart[name] += this.inventory[index].quantity
-      this.inventory[index].quantity = 0
-      console.log(this.cart)
+      this.cart[name] += quantity
     },
     toggleSidebar () {
       this.showSidebar = !this.showSidebar
