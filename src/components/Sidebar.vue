@@ -4,7 +4,7 @@
       <h1 class="cart-title spread">
         <span>
           Cart
-          <i class="icofont-cart-alt icofont-1x"></i>
+          <i class="icoFont-cart-alt icoFont-1x"></i>
         </span>
         <button @click="toggle" class="cart-close">&times;</button>
       </h1>
@@ -13,7 +13,6 @@
         <table class="cart-table">
           <thead>
             <tr>
-              <th><span class="sr-only">Product Image</span></th>
               <th>Product</th>
               <th>Price</th>
               <th>Qty</th>
@@ -23,11 +22,10 @@
           </thead>
           <tbody>
             <tr v-for="(quantity, key, i) in cart" :key="i">
-              <td><i class="icofont-carrot icofont-3x"></i></td>
-              <td>{{ key }}</td>
-              <td>${{ getPrice(key) }}</td>
+              <td class="center">{{ key }}</td>
+              <td class="center">${{ getPrice(key) }}</td>
               <td class="center">{{ quantity }}</td>
-              <td>${{ quantity * getPrice(key) }}</td>
+              <td class="center">${{ quantity * getPrice(key) }}</td>
               <td class="center">
                 <button @click="remove(key)" class="btn btn-light cart-remove">
                   &times;

@@ -2,9 +2,9 @@
   <div class="home">
     <div class="splash-container">
       <div class="splash">
-        <h1>Splendid Food</h1>
+        <h1> Fresh Food Store </h1>
       </div>
-    </div>
+      </div>
 
     <main class="wrapper">
 
