@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --bodyBackground: #FCF5D8;
     --bodyTextColor: #390D04;
     --topNavBackground: #79A206;
@@ -12,7 +12,24 @@
     --splashTextShadow: #200;
     --cardTextColor: #280D14;
     --cardBackground: #FAF2C3;
-    /* --unusedCardColor: #F8ED94; */
     --cardBorder: #F6E57B;
     --cardHeaderBackground: #D4D600;
+} */
+
+:root {
+    --bodyBackground: #f8f9fa;
+    --bodyTextColor: #1e6091;
+    --topNavBackground: #184e77;
+    --topNavColor: #f8f9fa;
+    --topBarLinkHoverBackground: #1a759f;
+    --splashTextColor: #1a759f;
+    --cartBackground: #184e77;
+    --cartTitleBackground: #1a759f;
+    --footerBackground: #184e77;
+    --splashBackground: #390D04;
+    --splashTextShadow: #200;
+    --cardTextColor: #280D14;
+    --cardBackground: #8ecae6;
+    /* --cardBorder: #184e77; */
+    --cardHeaderBackground: #caf0f8;
 }
