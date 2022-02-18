@@ -26,10 +26,9 @@
     --cartBackground: #184e77;
     --cartTitleBackground: #1a759f;
     --footerBackground: #184e77;
-    --splashBackground: #390D04;
-    --splashTextShadow: #200;
+    --splashBackground: #273904;
+    --splashTextShadow: #f8f9fa;
     --cardTextColor: #280D14;
     --cardBackground: #8ecae6;
-    /* --cardBorder: #184e77; */
     --cardHeaderBackground: #caf0f8;
 }

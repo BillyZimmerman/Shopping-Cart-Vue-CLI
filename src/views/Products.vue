@@ -4,12 +4,13 @@
 
     <div class="card-container">
       <ProductCard
-        v-for='(product, index) in inventory.slice(0,16)'
+        v-for='(product, index, icon) in inventory.slice(0,16)'
         :key="product.id"
         class="card"
         :index="index"
         :product="product"
         :addToCart="addToCart"
+        :icon="icon"
       />
     </div>
   </main>
@@ -20,7 +21,7 @@
 import ProductCard from '@/components/ProductCard.vue'
 
 export default {
-  props: ['inventory', 'addToCart'],
+  props: ['inventory', 'addToCart', 'icon'],
   components: {
     ProductCard
   }

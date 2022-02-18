@@ -17,17 +17,17 @@
         <tr>
           <td><i class="icofont-carrot icofont-4x" /></td>
           <td>Carrot</td>
-          <td>$1.00</td>
-          <td>1</td>
-          <td>$1.00</td>
+          <td>$4.82</td>
+          <td>4</td>
+          <td>$19.28</td>
           <td><button class="btn btn-dark">Add</button></td>
         </tr>
         <tr>
-          <td><i class="icofont-banana icofont-4x" /></td>
-          <td>Banana</td>
-          <td>$0.50</td>
-          <td>10</td>
-          <td>$5.00</td>
+          <td><i class="icofont-orange icofont-4x" /></td>
+          <td>Orange</td>
+          <td>$4.95</td>
+          <td>5</td>
+          <td>$24.75</td>
           <td><button class="btn btn-dark">Add</button></td>
         </tr>
       </tbody>
