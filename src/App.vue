@@ -25,6 +25,7 @@
     :inventory="inventory"
     :remove="removeItem"
   />
+
 </template>
 
 <script>

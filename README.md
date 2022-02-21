@@ -1,11 +1,11 @@
 # product-and-cart
 
-## Project setup
+## Project setup run -
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### For compiles and hot-reloads for development run -
 ```
 npm run serve
 ```

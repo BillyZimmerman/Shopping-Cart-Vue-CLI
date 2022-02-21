@@ -2,7 +2,7 @@
   <main class="wrapper">
     <h1>Products</h1>
 
-    <div class="recommended">
+    <div class="card-container">
       <ProductCard
         v-for='(product, index, icon) in inventory.slice(0,15)'
         :key="product.id"
